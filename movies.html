@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Page</title>
+    <link rel="stylesheet" href="styles.css"> <!-- You can link to your stylesheet if you have one -->
+    <script src="https://kit.fontawesome.com/c8e4d183c2.js" crossorigin="anonymous"></script>
+    <style>
+        /* Added CSS for navbar */
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        nav {
+            background-color: rgb(255, 255, 255);
+            color: #fff;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+        }
+
+        .logo img {
+            height: 40px; /* Adjust as needed */
+        }
+
+        .menu {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+
+        .menu li {
+            margin-right: 20px;
+        }
+
+        .menu li a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        .menu-icon {
+            display: none;
+            cursor: pointer;
+        }
+
+        @media screen and (max-width: 768px) {
+            .menu {
+                display: none;
+                flex-direction: column;
+                position: absolute;
+                top: 60px;
+                left: 0;
+                background-color: #333;
+                width: 100%;
+                padding: 10px;
+            }
+
+            .menu li {
+                margin: 10px 0;
+            }
+
+            .menu-icon {
+                display: block;
+            }
+
+            .menu-btn {
+                display: none;
+            }
+
+            .menu-btn:checked ~ .menu {
+                display: flex;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<!-- Navigation -->
+<nav>
+    <a href="#" class="logo">
+        <img src="img/hahah.JPG" alt="Logo">
+    </a>
+
+    <input type="checkbox" class="menu-btn" id="menu-btn"/>
+    <label class="menu-icon" for="menu-btn">
+        <span class="nav-icon">&#9776;</span> <!-- Hamburger icon -->
+    </label>
+
+    <ul class="menu">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="movies.html">Movies</a></li>
+       
+        <li><a href="india.html">Indian Movies</a></li>
+        <li><a href="anime.html">Anime</a></li>
+        
+    </ul>
+    <div class="search">
+        <input type="text" placeholder="Find Your Favorite Movies"/>
+        <i class="fas fa-search"></i>
+    </div>
+</nav>
+
+<!-- Rest of your content -->
+<!-- Movies Section, Buttons, Footer, etc. -->
+
+ <!-- Movies Section -->
+    <div class="movies-heading">
+        <h2>Movies</h2>
+    </div>
+
+    <section id="movies-list">
+       
+       
+       <!--box-11------------------------>
+       <div class="movies-box">
+        <!--img------------>
+        <div class="movies-img">
+            
+             <a href="https://hdtoday.cc/watch-movie/watch-bad-boys-ride-or-die-full-109831.10505281" onclick="playVideo(event)">
+            <img src="img/Screenshot 2024-06-24 at 7.28.09 PM.png">
+        </div>
+        <!--text--------->Bad Boys: Ride or Die
+        <a href="#">
+            
+        </a>
+    </div>
+    <!--box-11------------------------>
+    <div class="movies-box">
+        <!--img------------>
+        <div class="movies-img">
+            
+             <a href="https://hdtoday.cc/watch-movie/watch-trigger-warning-full-110422.10524778" onclick="playVideo(event)">
+            <img src="img/Screenshot 2024-06-24 at 7.33.23 PM.png">
+        </div>
+        <!--text--------->Trigger Warning
+        <a href="#">
+            
+        </a>
+    </div>
+    <!--box-11------------------------>
+    <div class="movies-box">
+        <!--img------------>
+        <div class="movies-img">
+            
+             <a href="https://hdtoday.cc/watch-movie/watch-if-full-109195.10470370" onclick="playVideo(event)">
+            <img src="img/Screenshot 2024-06-24 at 7.35.18 PM.png">
+        </div>
+        <!--text--------->IF
+        <a href="#">
+            
+        </a>
+    </div>
+        <!--box-1------------------------>
+        <div class="movies-box">
+            <!--img------------>
+            <div class="movies-img">
+                
+                 <a href="https://hdtoday.cc/watch-movie/watch-godzilla-x-kong-the-new-empire-full-107563.10385455" onclick="playVideo(event)">
+                <img src="img/kg.png">
+            </div>
+            <!--text--------->Godzilla x Kong: The New Empire
+            <a href="#">
+                
+            </a>
+        </div>
+         
+		  <!--box-2------------------------>
+        <div class="movies-box">
+            <!--img------------>
+            <div class="movies-img">
+                
+                 <a href="https://hdtoday.cc/watch-movie/watch-kingdom-of-the-planet-of-the-apes-full-108877.10454890" onclick="playVideo(event)">
+                <img src="img/Screenshot 2024-05-13 at 4.25.49 PM.png">
+            </div>
+            <!--text--------->Kingdom of the Planet of the Apes
+            <a href="#">
+                
+            </a>
+        </div>
+		
+		 <!--box-3------------------------>
+        <div class="movies-box">
+            <!--img------------>
+            <div class="movies-img">
+               
+                 <a href="https://hdtoday.cc/watch-movie/watch-ghostbusters-frozen-empire-full-107449.10379629" onclick="playVideo(event)">
+                <img src="img/Screenshot 2024-05-13 at 5.20.10 PM.png">
+            </div>
+            <!--text--------->Ghostbusters: Frozen Empire
+            <a href="#">
+                
+            </a>
+        </div>
+		 <!--box-4------------------------>
+        <div class="movies-box">
+            <!--img------------>
+            <div class="movies-img">
+               
+                 <a href="https://hdtoday.cc/watch-movie/watch-slyth-the-hunt-saga-full-108940.10457689" onclick="playVideo(event)">
+                <img src="img/Screenshot 2024-05-13 at 5.23.12 PM.png">
+            </div>
+            <!--text--------->Slyth: The Hunt Saga
+            <a href="#">
+                
+            </a>
+        </div>
+		 <!--box-5------------------------>
+        <div class="movies-box">
+            <!--img------------>
+            <div class="movies-img">
+                
+                 <a href="https://hdtoday.cc/watch-movie/watch-light-full-108781.10445632" onclick="playVideo(event)">
+                <img src="img/Screenshot 2024-05-13 at 5.33.53 PM.png">
+            </div>
+            <!--text--------->Light
+            <a href="#">
+                
+            </a>
+        </div>
+
+        <!--box-6------------------------>
+        <div class="movies-box">
+            <!--img------------>
+            <div class="movies-img">
+                
+                 <a href="https://hdtoday.cc/watch-movie/watch-the-dark-knight-full-19752.5297326" onclick="playVideo(event)">
+                <img src="img/Screenshot 2024-05-13 at 5.47.00 PM.png">
+            </div>
+            <!--text--------->The Dark Knight
+            <a href="#">
+                
+            </a>
+        </div>
+
+        <!--box-7------------------------>
+        <div class="movies-box">
+            <!--img------------>
+            <div class="movies-img">
+                
+                 <a href="https://hdtoday.cc/watch-movie/watch-kung-fu-panda-4-full-106963.10353301" onclick="playVideo(event)">
+                <img src="img/Screenshot 2024-05-13 at 5.55.50 PM.png">
+            </div>
+            <!--text--------->Kung Fu Panda 4
+            <a href="#">
+                
+            </a>
+        </div>
+
+        <!--box-8------------------------>
+        <div class="movies-box">
+            <!--img------------>
+            <div class="movies-img">
+                
+                 <a href="https://hdtoday.cc/watch-movie/watch-monkey-man-full-107839.10399369" onclick="playVideo(event)">
+                <img src="img/Screenshot 2024-05-13 at 6.52.43 PM.png">
+            </div>
+            <!--text--------->Monkey Man
+            <a href="#">
+                
+            </a>
+        </div>
+
+        <!--box-9------------------------>
+        <div class="movies-box">
+            <!--img------------>
+            <div class="movies-img">
+                
+                 <a href="https://hdtoday.cc/watch-movie/watch-godzilla-minus-one-full-104032.10185556" onclick="playVideo(event)">
+                <img src="img/Screenshot 2024-05-16 at 7.31.52 PM.png">
+            </div>
+            <!--text--------->Godzilla Minus One
+            <a href="#">
+                
+            </a>
+        </div>
+
+        <!--box-10------------------------>
+        <div class="movies-box">
+            <!--img------------>
+            <div class="movies-img">
+                
+                 <a href="https://hdtoday.cc/watch-movie/watch-oppenheimer-full-98446.9759013" onclick="playVideo(event)">
+                <img src="img/Screenshot 2024-05-16 at 7.37.04 PM.png">
+            </div>
+            <!--text--------->Oppenheimer
+            <a href="#">
+                
+            </a>
+        </div>
+
+        <!--box-11------------------------>
+        <div class="movies-box">
+            <!--img------------>
+            <div class="movies-img">
+                
+                 <a href="https://hdtoday.cc/watch-movie/watch-fast-and-furious-10-full-8846.9651934" onclick="playVideo(event)">
+                <img src="img/Screenshot 2024-05-16 at 7.38.55 PM.png">
+            </div>
+            <!--text--------->Fast X
+            <a href="#">
+                
+            </a>
+        </div>
+        
+                
+            </a>
+        </div>
+		
+
+    </section>
+
+    <script src="https://kit.fontawesome.com/c8e4d183c2.js" crossorigin="anonymous"></script>
+        
+    </section>
+
+    <!-- Buttons -->
+    <div class="btns">
+        <a href="index.html">Previous</a>
+        <a href="india.html">Next</a>
+
+     
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p></p>
+        <p>Copyright 2024 - ©HDMovie</p>
+        <p>Owned by - ©BAAT</p>
+        
+        
+    </footer>
+
+</body>
+
+</html>
