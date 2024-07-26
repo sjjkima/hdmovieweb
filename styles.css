@@ -70,11 +70,11 @@ nav .menu li a:hover{
     transition: all ease 0.2s;
 }
 #main{
-    padding-top: 80px;
+    padding-top: 60px;
     background-color: rgb(255, 255, 255);
 }
 .showcase-box{
-    width:430px;
+    width:350px;
     height: 450px;
     box-shadow: 5px 15px 30px rgba(0,0,0,0.3);
     border-radius: 10px;
@@ -114,11 +114,11 @@ nav .menu li a:hover{
     margin: 20px 10px;
     border-radius: 10px;
     overflow:hidden;
-    width:200px;
+    width:300px;
     background-color: #ffffff;
 }
 .latest-b-img{
-    width:100%;
+    width:200px;
     height: 270px;
 }
 .latest-b-img img{
